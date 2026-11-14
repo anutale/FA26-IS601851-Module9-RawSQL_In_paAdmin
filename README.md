@@ -60,7 +60,7 @@ This application demonstrates:
 
 ## Requirements
 
-- Python 3.10+
+- Python 3.10 (the version used by CI and Docker; use it for the complete pinned dependency set)
 - pip
 - Optional: Docker Desktop and Docker Compose
 - Optional for E2E tests: Playwright browsers
@@ -71,7 +71,7 @@ This application demonstrates:
 2. Create and activate a virtual environment:
 
 ```bash
-python -m venv .venv
+python3.10 -m venv .venv
 source .venv/bin/activate   # On Windows use .venv\Scripts\activate
 ```
 
