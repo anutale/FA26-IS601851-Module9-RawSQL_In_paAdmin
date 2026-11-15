@@ -24,6 +24,12 @@ def client():
     with TestClient(app) as client:
         yield client  # Provide the TestClient instance to the test functions
 
+def test_root_serves_calculator_page(client):
+    response = client.get("/")
+
+    assert response.status_code == 200
+    assert "text/html" in response.headers["content-type"]
+
 # ---------------------------------------------
 # Test Function: test_add_api
 # ---------------------------------------------

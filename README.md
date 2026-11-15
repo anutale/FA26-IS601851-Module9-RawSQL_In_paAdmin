@@ -60,7 +60,7 @@ This application demonstrates:
 
 ## Requirements
 
-- Python 3.10 (the version used by CI and Docker; use it for the complete pinned dependency set)
+- Python 3.10 for local setup and CI; the Docker image uses Python 3.12
 - pip
 - Optional: Docker Desktop and Docker Compose
 - Optional for E2E tests: Playwright browsers
